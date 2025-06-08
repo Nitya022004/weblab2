@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  function notBad(str) {
+    let not = str.indexOf("not");
+    let bad = str.indexOf("bad");
+
+    if (not != -1 && bad > not) {
+      return str.replace(str.substring(not, bad + 3), "good");
+    }
+
+    return str;
+  }
+
+  // Test cases
+  console.log(notBad("This dinner is not that bad!"));   // This dinner is good!
+  console.log(notBad("This movie is not so bad!"));      // This movie is good!
+  console.log(notBad("This dinner is bad!"));            // This dinner is bad!
+</script>
+</body>
+</html>

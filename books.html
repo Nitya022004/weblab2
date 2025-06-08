@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const books=[{author:"nitya" , title:"princess", read:true}, {author:"isha",title:"job",read:false}];
+
+            for(let i=0;i<books.length;i++)
+            {
+                let book=books[i];
+                console.log(book.title + "by" + book.author);
+
+                if(book.read){
+                    console.log("already read");
+                }
+                else{
+                    console.log("yet to read");
+                }
+            }
+            </script>
+            </body>
+            </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  function verbing(word) {
+    if (word.length >= 3) {
+      if (word.endsWith("ing")) {
+        return word + "ly";
+      } else {
+        return word + "ing";
+      }
+    } else {
+      return word;
+    }
+  }
+
+  // Test cases
+  console.log(verbing("swim"));       // swimming
+  console.log(verbing("swimming"));   // swimmingly
+  console.log(verbing("go"));         // go
+</script>
+</body>
+</html>

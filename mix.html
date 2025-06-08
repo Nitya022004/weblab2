@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function mixup(word){
+
+                let result="";
+                result+=word[0];
+
+                for(let i=1;i<word.length;i++){
+
+                    let char=word[i];
+                    if(char===word[0]){
+                        result+="*";
+                    }
+                    else{
+                        result+=char;
+                    }
+                }
+
+                return result;
+            }
+
+            let wordd=prompt("enter");
+            alert("word:"+mixup(wordd));
+            </script>
+            </body>
+            </html>

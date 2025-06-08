@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  function pluralize(noun, number) {
+    // Special words that don't follow the 'add s' rule
+    if (number === 1) {
+      return number + " " + noun;
+    }
+
+    // Check for special plural words
+    if (noun === "sheep") {
+      return number + " sheep";
+    }
+    if (noun === "goose") {
+      return number + " geese";
+    }
+
+    // For regular words, just add 's'
+    return number + " " + noun + "s";
+  }
+
+  // Testing the function
+  console.log(pluralize("cat", 3));     // 3 cats
+  console.log(pluralize("dog", 1));     // 1 dog
+  console.log(pluralize("sheep", 4));   // 4 sheep
+  console.log(pluralize("goose", 2));   // 2 geese
+</script>
+</body>
+</html>

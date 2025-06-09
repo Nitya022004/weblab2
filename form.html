@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elective Registration Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      background: white;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #0059b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Student Elective Registration</h2>
+    <form>
+      <label for="name">Student Name:</label>
+      <input type="text" id="name"required>
+
+      <label for="usn">USN:</label>
+      <input type="text" id="usn" required>
+
+      <label for="semester">Semester:</label>
+      <select id="semester" required>
+        <option value="4">4th Semester</option>
+        <option value="5">5th Semester</option>
+        <option value="6">6th Semester</option>
+      </select>
+
+      <label for="elective">Choose Elective:</label>
+      <select id="elective" name="elective" required>
+        <option value="">--Select--</option>
+        <option value="cloud">Cloud Computing</option>
+        <option value="ml">Machine Learning</option>
+        <option value="iot">IoT Systems</option>
+        <option value="blockchain">Blockchain Technology</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
